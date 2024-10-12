@@ -1,4 +1,4 @@
-import { maleNames, femaleNames, surnames } from '../data/spanish-names.js';
+import { maleNames, femaleNames, surnames } from './data/spanish-names.js';
 
 // Definir las funciones
 function generateRandomName(
