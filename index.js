@@ -71,6 +71,3 @@ export {
     generateRandomDNI,
     generateRandomNIE
 };
-
-// Example usage
-console.log(generateRandomName());
