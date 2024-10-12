@@ -3,9 +3,7 @@
 
 **Random Spanish Names** is a package that generates random Spanish names, including first names, last names, emails, phone numbers, and identification numbers (DNI/NIE). It is perfect for testing, mock data generation, or any application that needs placeholder personal information with realistic details.
 
-**Random Spanish Names** es un paquete que genera nombres aleatorios en español, incluyendo nombres, apellidos, correos electrónicos, números de teléfono y números de identificación (DNI/NIE). Es ideal para pruebas, generación de datos ficticios o cualquier aplicación que necesite información personal de relleno con detalles realistas.
-
-## Features / Características
+## Features
 
 - Generate random Spanish names (first and last names).
 - Create full names with customizable gender (male, female, or random).
@@ -14,28 +12,21 @@
 - Generate valid Spanish DNI and NIE numbers.
 - Flexibility to pass custom arrays for names and surnames.
 
-- Genera nombres aleatorios en español (nombres y apellidos).
-- Crea nombres completos con género personalizable (masculino, femenino o aleatorio).
-- Genera correos electrónicos únicos con estructura basada en nombres reales.
-- Produce números de teléfono con el prefijo de España (+34).
-- Genera números de DNI y NIE válidos en España.
-- Flexibilidad para pasar arrays personalizados de nombres y apellidos.
 
-## Installation / Instalación
+## Installation
 
 You can install this package using npm:
 
-Puedes instalar este paquete usando npm:
+
 
 ```bash
 npm install random-spanish-names
 ```
 
-## Usage / Uso
+## Usage
 
 Here is an example of how to use the package:
 
-Aquí tienes un ejemplo de cómo usar el paquete:
 
 ```javascript
 const { generateRandomName } = require('random-spanish-names');
@@ -65,11 +56,9 @@ El objeto generado incluye:
 - **dni**: Random DNI / DNI aleatorio.
 - **nie**: Random NIE / NIE aleatorio.
 
-### Customizing Names / Personalización de Nombres
+### Customizing Names
 
 You can pass custom arrays of names and surnames if you prefer:
-
-Puedes pasar arrays personalizados de nombres y apellidos si lo prefieres:
 
 ```javascript
 const customMaleNames = ['Juan', 'Pedro', 'Carlos'];
@@ -79,18 +68,6 @@ const customPerson = generateRandomName('male', customMaleNames, [], customSurna
 console.log(customPerson);
 ```
 
-## Testing / Pruebas
-
-To run tests, use:
-
-Para ejecutar pruebas, usa:
-
-```bash
-npm test
-```
-
 ## License / Licencia
 
 This project is licensed under the ISC License. See the [LICENSE](./LICENSE) file for more details.
-
-Este proyecto está bajo la Licencia ISC. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
