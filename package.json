@@ -1,0 +1,32 @@
+{
+  "name": "random-spanish-names",
+  "version": "1.0.0",
+  "description": "This package is a Spanish name generator that creates random names, including first names, last names, emails, phone numbers, and identification numbers (DNI/NIE). It provides the ability to generate full names with realistic details, making it ideal for testing, mock data generation, or applications needing placeholder personal information. The generated emails include unique alphanumeric identifiers to ensure they are distinct, and phone numbers are formatted with a Spanish prefix (+34). It also generates valid Spanish DNI and NIE numbers for more comprehensive mock data generation. Este paquete es un generador de nombres en español que crea nombres aleatorios, incluyendo nombres, apellidos, correos electrónicos, números de teléfono y números de identificación (DNI/NIE). Ofrece la capacidad de generar nombres completos con detalles realistas, lo que lo hace ideal para pruebas, generación de datos ficticios o aplicaciones que necesitan información personal de relleno. Los correos electrónicos generados incluyen identificadores alfanuméricos únicos para garantizar que sean distintos, y los números de teléfono están formateados con el prefijo español (+34). También genera números válidos de DNI y NIE para una generación de datos ficticios más completa.",
+  "main": "index.js",
+  "type": "module",
+  "jest": {
+    "transform": {}
+  },
+  "scripts": {
+    "start": "node lib/index.js"
+  },
+  "keywords": [
+    "random",
+    "spanish",
+    "names",
+    "name-generator",
+    "apellido",
+    "nombres",
+    "random-names",
+    "generator",
+    "spanish-names",
+    "full-name",
+    "name-data",
+    "faker",
+    "test-data",
+    "nombres-aleatorios",
+    "data-generation"
+  ],
+  "author": "Iroqas",
+  "license": "ISC"
+}
