@@ -46,8 +46,6 @@ console.log(femalePerson);
 
 The generated object includes:
 
-El objeto generado incluye:
-
 - **firstName**: Random first name / Nombre aleatorio.
 - **secondName**: First surname / Primer apellido.
 - **thirdName**: Second surname / Segundo apellido.
