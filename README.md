@@ -29,7 +29,7 @@ Here is an example of how to use the package:
 
 
 ```javascript
-const { generateRandomName } = require('random-spanish-names');
+import { generateRandomName } from "random-spanish-names";
 
 // Generate a random name with gender as "random"
 const randomPerson = generateRandomName();
