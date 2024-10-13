@@ -1,4 +1,4 @@
-import { maleNames, femaleNames, surnames } from './data/spanish-names.js';
+const { maleNames, femaleNames, surnames } = require('./data/spanish-names');
 
 // Definir las funciones
 function generateRandomName(
@@ -66,7 +66,7 @@ function generateRandomNIE() {
     return `${prefix}${number}${letter}`;
 }
 
-export {
+module.exports = {
     generateRandomName,
     generateRandomDNI,
     generateRandomNIE

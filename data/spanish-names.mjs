@@ -36,7 +36,8 @@ const surnames = [
     "Vega", "Velasco", "Vidal", "Vila", "Villanueva", "Villar", "Yáñez", "Zamora", "Zapata", "Zúñiga"
 ];
 
-module.exports = {
+// Usa
+export {
     maleNames,
     femaleNames,
     surnames

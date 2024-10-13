@@ -1,23 +1,26 @@
 
 # Random Spanish Names
 
-**Random Spanish Names** is a package that generates random Spanish names, including first names, last names, emails, phone numbers, and identification numbers (DNI/NIE). It is perfect for testing, mock data generation, or any application that needs placeholder personal information with realistic details.
+**Version: 1.0.3**
 
-## Features
+## Description
 
-- Generate random Spanish names (first and last names).
-- Create full names with customizable gender (male, female, or random).
-- Generate unique emails with realistic name-based structure.
-- Produce phone numbers formatted with the Spanish country code (+34).
-- Generate valid Spanish DNI and NIE numbers.
-- Flexibility to pass custom arrays for names and surnames.
+Random Spanish Names is a generator that creates random Spanish names, including first names, last names, emails, phone numbers, and identification numbers (DNI/NIE). 
 
+This package is ideal for:
+- Testing
+- Mock data generation
+- Applications that require placeholder personal information.
+
+The generator produces:
+- Full names with realistic details.
+- Unique emails with alphanumeric identifiers.
+- Phone numbers formatted with the Spanish prefix (+34).
+- Valid DNI and NIE numbers.
 
 ## Installation
 
-You can install this package using npm:
-
-
+Install the package via npm:
 
 ```bash
 npm install random-spanish-names
@@ -25,47 +28,62 @@ npm install random-spanish-names
 
 ## Usage
 
-Here is an example of how to use the package:
+### ES6 Modules
 
-
-```javascript
-import { generateRandomName } from "random-spanish-names";
-
-// Generate a random name with gender as "random"
-const randomPerson = generateRandomName();
-console.log(randomPerson);
-
-// Generate a male name
-const malePerson = generateRandomName('male');
-console.log(malePerson);
-
-// Generate a female name
-const femalePerson = generateRandomName('female');
-console.log(femalePerson);
-```
-
-The generated object includes:
-
-- **firstName**: Random first name / Nombre aleatorio.
-- **secondName**: First surname / Primer apellido.
-- **thirdName**: Second surname / Segundo apellido.
-- **email**: Random email / Correo electrónico aleatorio.
-- **phoneNumber**: Spanish phone number / Número de teléfono español.
-- **dni**: Random DNI / DNI aleatorio.
-- **nie**: Random NIE / NIE aleatorio.
-
-### Customizing Names
-
-You can pass custom arrays of names and surnames if you prefer:
+Import the package into your project using `import`:
 
 ```javascript
-const customMaleNames = ['Juan', 'Pedro', 'Carlos'];
-const customSurnames = ['González', 'Pérez', 'Martínez'];
+import { generateRandomName } from 'random-spanish-names';
 
-const customPerson = generateRandomName('male', customMaleNames, [], customSurnames);
-console.log(customPerson);
+const name = generateRandomName();
+console.log(name);
 ```
 
-## License / Licencia
+### CommonJS
 
-This project is licensed under the ISC License. See the [LICENSE](./LICENSE) file for more details.
+If you are using **CommonJS**, use `require`:
+
+```javascript
+const { generateRandomName } = require('random-spanish-names');
+
+const name = generateRandomName();
+console.log(name);
+```
+
+## Functions
+
+### `generateRandomName(gender = "random")`
+
+Generates a full random name (first name, two last names, email, phone number, DNI, and NIE).
+
+Parameters:
+- `gender` (optional): Can be `"male"`, `"female"`, or `"random"` to select a gender randomly.
+
+Returns an object with:
+- `firstName`: First name.
+- `secondName`: First last name.
+- `thirdName`: Second last name.
+- `email`: Email generated based on the full name.
+- `phoneNumber`: Phone number with the Spanish prefix (+34).
+- `dni`: Valid Spanish DNI.
+- `nie`: Valid Spanish NIE.
+
+### `generateRandomDNI()`
+
+Generates a valid Spanish DNI number.
+
+### `generateRandomNIE()`
+
+Generates a valid Spanish NIE number.
+
+## Data
+
+Names are sourced from the lists of male names, female names, and surnames stored in the file `./data/spanish-names.js`.
+
+## Exports
+
+The package is compatible with both **CommonJS** and **ES6 Modules**, thanks to the configuration of the `"exports"` field in `package.json`.
+
+## License
+
+This project is licensed under the ISC License.
