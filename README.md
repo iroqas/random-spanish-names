@@ -14,7 +14,7 @@ This package is ideal for:
 
 The generator produces:
 - Full names with realistic details.
-- Unique emails with alphanumeric identifiers.
+- Unique emails.
 - Phone numbers formatted with the Spanish prefix (+34).
 - Valid DNI and NIE numbers.
 
